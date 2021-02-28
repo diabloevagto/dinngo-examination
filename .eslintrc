@@ -1,0 +1,40 @@
+{
+  "extends": "react-app",
+  "plugins": ["sort-imports-es6-autofix", "import"],
+  "rules": {
+    "import/no-anonymous-default-export": "error",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "error",
+    "linebreak-style": ["error", "unix"],
+    "no-duplicate-imports": "error",
+    "comma-dangle": [
+      "error",
+      {
+        "arrays": "always-multiline",
+        "objects": "always-multiline",
+        "imports": "always-multiline",
+        "exports": "always-multiline",
+        "functions": "always-multiline"
+      }
+    ],
+    "sort-imports-es6-autofix/sort-imports-es6": [
+      "error",
+      {
+        "memberSyntaxSortOrder": ["multiple", "single", "all", "none"]
+      }
+    ],
+    "no-restricted-imports": [
+      "error",
+      {
+        "patterns": ["../*"]
+      }
+    ],
+    "react/self-closing-comp": [
+      "error",
+      {
+        "component": true,
+        "html": true
+      }
+    ]
+  }
+}

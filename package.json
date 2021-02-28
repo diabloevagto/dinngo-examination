@@ -1,0 +1,43 @@
+{
+  "name": "dinngo-examination",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "env-cmd -r .env-rc.js -e development react-scripts start",
+    "build:test": "env-cmd -r .env-rc.js -e test react-scripts build",
+    "build:production": "env-cmd -r .env-rc.js -e production react-scripts build"
+  },
+  "dependencies": {
+    "@ethersproject/providers": "^5.0.23",
+    "@web3-react/core": "^6.1.9",
+    "@web3-react/injected-connector": "^6.0.7",
+    "ethers": "^5.0.31",
+    "ramda": "^0.27.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-hook-form": "^6.15.4",
+    "react-scripts": "4.0.2"
+  },
+  "devDependencies": {
+    "env-cmd": "^10.1.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-sort-imports-es6-autofix": "^0.5.0"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
